@@ -1,0 +1,35 @@
+ var resume = {
+    firstName:'Mridul',
+    lastName:'Agrahari',
+    DOB : "02/10/1996",
+    Age:'27',
+    location:'india',
+    skills: ['HTML','CSS','JS','SQL','Mongodb','nodejs'],
+    projects: ['money manager','nationalize API','calculator'],
+    graduation : 'B.Tech in CS'
+
+}
+
+
+//for(i in resume){
+//    console.log(i)
+//}
+
+//for(i in resume){
+//    console.log(i,resume[i])
+//}
+
+//keys
+//console.log(Object.keys(resume));
+//values
+//console.log(Object.values(resume));
+
+//for Each
+
+//Object.keys(resume).forEach((x,a,b) => console.log(x,a,b));
+
+
+
+for (const [key, value] of Object.entries(resume)) {
+    console.log(`${key}: ${value}`);
+  }
